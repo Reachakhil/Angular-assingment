@@ -1,0 +1,30 @@
+
+
+<div class="body1">
+<div class="container">
+<form class="form" [formGroup] = "form2">
+        <h1>Educational Details</h1>
+          <mat-form-field class="full-width-layout">
+              <input type = "text" matInput placeholder="College Name" formControlName = "college" />
+          </mat-form-field><br>
+          
+            <mat-form-field class="full-width-layout">
+              <input type="text" pattern="[0-9]*" matInput placeholder="Percentage" formControlName = "cgpa" />
+            </mat-form-field><br>
+
+            <mat-form-field>
+              <mat-select placeholder="streams" formControlName = "branch">
+                <mat-option *ngFor="let branch of branchesgroup" [value]="branch.value">
+                  {{branch.value}}
+                </mat-option><br>
+              </mat-select>
+            </mat-form-field><br>
+            
+            <button  type="button" mat-flat-button color="primary" (click) = "onNavigateBehind()">Back</button>
+      </form>
+    </div>
+    </div>
+
+<!--
+<div> <input type="text" [(ngModel)]="text2"></div>
+<p> {{ text2 }}</p>-->

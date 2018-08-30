@@ -1,0 +1,47 @@
+.d1{
+    border:5px groove;
+    width:auto;
+    height:800px;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    background-color:lemonchiffon;
+    color:black;
+  border:0px; 
+}
+#btn2{
+   position: relative;
+   left:20px;
+}
+.header1{
+
+   
+    font-family: 'Nunito', sans-serif;
+    background-color: #1C2833;
+    height:100px;
+   width:relative; 
+
+   
+
+}
+.button1{
+    display:inline;
+    word-spacing:20px;
+    color:whitesmoke;
+}
+h1{
+    color:whitesmoke;
+}
+
+.header{
+    height:auto;
+    width:auto;
+    background-color:#2E86C1;
+    font-size:30px;
+    margin-bottom:0px;
+    padding:20px;
+    text-align:center;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+

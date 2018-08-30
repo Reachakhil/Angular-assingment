@@ -1,0 +1,6 @@
+
+<!-- <div class="header1" ><h1 >Student Details Form</h1>-->
+<app-comp1 (screenChange) = "changeScreen($event)" *ngIf = "screen" [(data)]="formData"></app-comp1>
+<app-comp2 (screenChange) = "changeScreen($event)" *ngIf = "!screen" [(data2)] = "formData2"></app-comp2>
+
+

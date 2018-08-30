@@ -1,0 +1,44 @@
+
+  h1{
+    color:black;
+  }
+  
+
+
+  
+.full-width-layout{
+  max-width: 500px;
+}
+  .mat-radio-button ~ .mat-radio-button {
+    padding-right: 16px;
+  }
+  .body1> .container>.form{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+   
+
+  }
+  .body1{
+  
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:  #2E86C1;
+  }
+
+  .body1>.container{
+    max-width:90%;
+    box-shadow: 0px 2px 2px 2px azure;
+    padding:30px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    background-color: azure;
+  }
+  .mat-form-field{
+    width: 300px;
+  }

@@ -1,0 +1,39 @@
+
+<div class="body1">
+                                <div class="container">
+                              <form class="form" [formGroup]="form">
+                                <h1>Personal Details</h1>
+                                  <mat-form-field class="full-width-layout">
+                                      <input type="text"  pattern="[a-zA-Z]*" matInput placeholder="Name" formControlName="name">
+                                    </mat-form-field><br>
+                          
+                                    <mat-form-field class="full-width-layout">
+                                        <input type="text" pattern="[a-z]+" matInput placeholder="email" formControlName="email">
+                                
+                                      </mat-form-field><br>
+                          
+                                    <mat-form-field class="full-width-layout">
+                                        <input type="text" pattern="[0-9]{10}" matInput placeholder="Phone" formControlName="phone">
+                         
+                                      </mat-form-field><br>
+                          
+                                      <mat-radio-group formControlName="gender">
+                                        <mat-radio-button value="male">Male</mat-radio-button>
+                                        <mat-radio-button value="female">Female</mat-radio-button>
+                                        <mat-radio-button value="others">Others</mat-radio-button>
+                                      </mat-radio-group><br> 
+                                       <span> Preffered Location  </span>  
+                                     
+                                     <mat-checkbox formControlName="location1" > Bangalore </mat-checkbox>
+                                      <mat-checkbox formControlName="location2" > Chennai </mat-checkbox> <br>
+                                 
+                                      <div class="formchild">
+                                    <button  type="button"  mat-flat-button color="primary" (click)="onNavigateForward()">Next</button>
+                                        </div>
+                                  </form>
+                            </div>
+
+                          </div>
+
+<!--<div><input type="text" [(ngModel)]="text1"/> [disabled]="form.invalid" </div>
+<p>{{ text1 }}</p>-->

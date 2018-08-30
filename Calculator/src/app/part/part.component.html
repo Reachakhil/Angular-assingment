@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="col-sm-4"><h1>CALC</h1><hr>
+     <!-- <div> {{ inp }}</div> -->
+      <input [(ngModel)]="inp"  class="form-control input-lg" type="text" />
+      <table [ngClass]="{'t1':'status'}" class="table table-bordered">
+        <tr>
+          <td><button  id="1" value="1" (click)="onclick(1)"  class="btn btn-primary" >1</button></td>
+          <td><button (click)="onclick(2)" class="btn btn-primary" >2</button></td>
+          <td><button  (click)="onclick(3)" class="btn btn-primary" >3</button></td>
+        </tr>
+        <tr>
+            <td><button  (click)="onclick(4)" class="btn btn-primary" >4</button></td>
+            <td><button  (click)="onclick(5)" class="btn btn-primary" >5</button></td>
+            <td><button (click)="onclick(6)" class="btn btn-primary" >6</button></td>
+          </tr>
+          <tr>
+              <td><button  (click)="onclick(7)" class="btn btn-primary" >7</button></td>
+              <td><button (click)="onclick(8)" class="btn btn-primary" >8</button></td>
+              <td><button (click)="onclick(9)" class="btn btn-primary" >9</button></td>
+            </tr>
+            <tr>
+                <td><button (click)="onclick('.')" class="btn btn-primary" >.</button></td>
+                <td><button (click)="onclick(0)" class="btn btn-primary" >0</button></td>
+                <td><button (click)="onclick('C')" class="btn btn-primary" >C</button></td>
+              </tr>
+              <tr>
+                  <td><button (click)="onclick('+')"  class=" btn btn-danger" >+</button></td>
+                  <td><button (click)="onclick('-')" class="btn btn-danger" >-</button></td>
+                  <td><button (click)="onclick('*')" class="btn btn-danger" >*</button></td>
+                </tr>
+                <tr>
+                    <td><button (click)="onclick('/')"  class="btn btn-danger" >/</button></td>
+                    <td><button (click)="onclick('=')" class="btn btn-warning" >=</button></td>
+                  </tr>
+      </table>
+          
+    </div>
+
+
+
+
+
+</div>
